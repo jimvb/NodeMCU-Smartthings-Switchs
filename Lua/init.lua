@@ -1,8 +1,8 @@
 wifi.setmode(wifi.STATION)
-wifi.sta.config("Van's Network","jv6145936792")
+wifi.sta.config("<Your SSID>","<Password>")
 print(wifi.sta.getip())
 wifi.sta.connect()
- wifi.sta.setip({ip="192.168.1.200",netmask="255.255.255.0",gateway="192.168.1.1"})
+ wifi.sta.setip({ip="<Static IP>",netmask="255.255.255.0",gateway="192.168.1.1"})
 --create a webserver
 led0 = 0
 led1 = 1
